@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DFA>
+    <states>
+        <state id="s0"/>
+        <state id="s1"/>
+        <state id="s2"/>
+        <state id="s3"/>
+        <state id="s4"/>
+        <state id="s5"/>
+    </states>
+    <initial>
+        <state id="s0"/>
+    </initial>
+    <alphabet>
+        <symbol>Y</symbol>
+        <symbol>N</symbol>
+    </alphabet>
+    <transitions>
+        <transition>
+            <from>s0</from>
+            <to>s1</to>
+            <read>Y</read>
+        </transition>
+        <transition>
+            <from>s1</from>
+            <to>s2</to>
+            <read>Y</read>
+        </transition>
+        <transition>
+            <from>s2</from>
+            <to>s3</to>
+            <read>Y</read>
+        </transition>
+        <transition>
+            <from>s3</from>
+            <to>s4</to>
+            <read>Y</read>
+        </transition>
+        <transition>
+            <from>s4</from>
+            <to>s5</to>
+            <read>Y</read>
+        </transition>
+        <transition>
+            <from>s5</from>
+            <to>s4</to>
+            <read>Y</read>
+        </transition>
+        <transition>
+            <from>s4</from>
+            <to>s3</to>
+            <read>N</read>
+        </transition>
+        <transition>
+            <from>s3</from>
+            <to>s2</to>
+            <read>N</read>
+        </transition>
+        <transition>
+            <from>s2</from>
+            <to>s1</to>
+            <read>N</read>
+        </transition>
+        <transition>
+            <from>s1</from>
+            <to>s0</to>
+            <read>N</read>
+        </transition>
+    </transitions>
+</DFA>
